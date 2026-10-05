@@ -159,9 +159,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAppModal }) => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 text-center sm:text-left">
-          <p>© {new Date().getFullYear()} Durgapur Fix Agency Inc. All rights reserved.</p>
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4 text-center md:text-left">
+          <div className="space-y-1">
+            <p>© {new Date().getFullYear()} Durgapur Fix Agency Inc. All rights reserved.</p>
+            <p className="text-slate-400 text-[11px]">
+              Developer :{' '}
+              <a 
+                href="https://leadspree.in" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-amber-400 hover:text-amber-300 font-semibold hover:underline"
+              >
+                LeadSpree Business Solutions
+              </a>
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 sm:gap-6">
             <button onClick={() => handlePageChange('/privacy')} className="hover:text-slate-300 transition-colors cursor-pointer py-1">
               Privacy Policy
             </button>
