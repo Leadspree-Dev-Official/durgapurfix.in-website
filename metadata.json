@@ -1,0 +1,6 @@
+{
+  "name": "Durgapur Fix",
+  "description": "Official agency portal for Durgapur Fix — book background-verified doorstep home services and repairs exclusively via our Android app with live GPS tracking and 30-day work warranty.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
